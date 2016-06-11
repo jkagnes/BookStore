@@ -1,0 +1,70 @@
+﻿
+{% extends "layout.html" %}
+
+{% block scripts %}
+    <script type="text/javascript">
+        $("#columnleft").css("display", "none");
+    </script>
+{% endblock %}
+
+{% block content %}
+
+    <aside>
+        <img id="aside_img" src="../static/images/bkst1.jpg" />
+    </aside>
+
+    <div style="margin-left:200px;">
+    <h2 style="font-family:Gabriola; font-size:40px; font-weight:bold; padding-top:10px;">Checkout Now</h2>
+    <p style="font-family:Garamond; font-size:25px;">Please enter your details, and we'll ship your books right away!</p>
+    <form method="post">
+        <h3 style="font-family:Cambria;font-size:25px;">Ship to</h3>
+        <div class="form-group">
+            <label style="font-family:Cambria;font-size:18px;">Name:</label>
+            <input type="text" required name="shipto" class="form-control" value="{{name_entered}}" />
+            <label style="font-family:Garamond; font-size:18px; color:red;">{{error_name}}</label>
+        </div>
+
+        <h3 style="font-family:Cambria;font-size:25px;">Address</h3>
+        <div class="form-group">
+            <label style="font-family:Cambria;font-size:18px;">Line 1:</label>
+            <input type="text" required name="address_line1" class="form-control" value="{{line1_entered}}" />
+            <label style="font-family:Garamond; font-size:18px; color:red;">{{error_line1}}</label>
+        </div>
+
+        <div class="form-group">
+            <label style="font-family:Cambria;font-size:18px;">Line 2:</label>
+            <input type="text" name="address_line2" class="form-control" value="{{line2_entered}}" />
+            <label style="font-family:Garamond; font-size:18px; color:red;">{{error_line2}}</label>
+        </div>
+
+        <div class="form-group">
+            <label style="font-family:Cambria;font-size:18px;">City:</label>
+            <input type="text" required name="city" class="form-control" value="{{city_entered}}" />
+            <label style="font-family:Garamond; font-size:18px; color:red;">{{error_city}}</label>
+        </div>
+
+        <div class="form-group">
+            <label style="font-family:Cambria;font-size:18px;">State:</label>
+            <input type="text" required name="state" class="form-control" value="{{state_entered}}" />
+            <label style="font-family:Garamond; font-size:18px; color:red;">{{error_state}}</label>
+        </div>
+
+        <div class="form-group">
+            <label style="font-family:Cambria;font-size:18px;">Zip:</label>
+            <input type="text" required name="zip" class="form-control" value="{{zip_entered}}" />
+            <label style="font-family:Garamond; font-size:18px; color:red;">{{error_zip}}</label>
+        </div>
+
+        <div class="form-group">
+            <label style="font-family:Cambria;font-size:18px;">Country:</label>
+            <input type="text" name="country" class="form-control" value="{{country_entered}}" />
+            <label style="font-family:Garamond; font-size:18px; color:red;">{{error_country}}</label>
+        </div>
+
+         <div class="text-center">
+            <input class="btn btn-primary" type="submit" style="font-family:Garamond; font-size:20px;" value="Complete order" />
+        </div>
+    </form>
+    </div>
+{% endblock %}
+

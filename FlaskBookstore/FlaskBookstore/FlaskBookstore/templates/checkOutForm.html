@@ -1,0 +1,36 @@
+﻿{% macro render_field(field) %}
+<dl>
+    {{ field.label }}
+    <dd>
+        {{ field(**kwargs)|safe }}
+        {% if field.errors %}
+        <ul class=errors>
+            {% for error in field.errors %}
+            <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </dd>
+</dl>
+{% endmacro %}
+
+{% extends "layout.html" %}
+
+{% block content %}
+    <aside>
+        <img id="aside_img" src="../static/images/bkst1.jpg" />
+    </aside>
+
+    <form method=post>
+        <dl>
+            {{ render_field(form.name) }}
+            {{ render_field(form.address_line1) }}
+            {{ render_field(form.address_line2) }}
+            {{ render_field(form.city) }}
+            {{ render_field(form.state) }}
+            {{ render_field(form.zip) }}
+            {{ render_field(form.country) }}
+        </dl>
+        <p><input type=submit>
+    </form>
+{% endblock %}

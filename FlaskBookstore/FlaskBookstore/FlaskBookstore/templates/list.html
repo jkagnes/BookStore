@@ -1,0 +1,37 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 style="font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif; color:green; margin-left:15px;"><strong>{{category}}</strong></h1>
+
+            {% for book in books %}
+
+            <div class="thumbnail" style="display:inline-block;width:300px;height:550px;overflow:auto;padding:15px;margin:15px">
+                <img src="{{book.smallThumbnail}}" />
+
+                <div class="caption">
+                    <div style="text-align:center">
+                        <form method="post" action="{{ url_for('addCart') }}">
+                            <input type="hidden" value="{{book.id}}" name="bookId" />
+                            <input type="hidden" value="{{url_for('list', category=category)}}" name="returnUrl" />
+                            <input type="submit" class="btn btn-success" value="Add to cart" />
+                        </form>
+                    </div>
+
+                    <h3 style="font-family:'Book Antiqua'; color:brown;"><strong>{{book.title}}</strong></h3>
+                    <p style="color:darkgreen;">
+                        Author: {{book.author}}<br />
+                        Pages: {{book.pageCount}}<br />
+                        Price: <strong>{{book.price}}</strong><br />
+                        Publisher: {{book.publisher}}<br />
+                        Published Date: {{book.publishedDate}}<br />
+                    </p>
+                    <p style="color:darkblue;">{{book.description}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

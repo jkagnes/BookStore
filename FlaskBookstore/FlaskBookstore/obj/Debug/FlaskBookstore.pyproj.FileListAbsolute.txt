@@ -1,0 +1,54 @@
+C:\Users\MLP\Documents\Visual Studio 2015\Projects\FlaskBookstore\FlaskBookstore\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\MLP\Documents\Visual Studio 2015\Projects\FlaskBookstore\FlaskBookstore\obj\Debug\attach_server.py
+C:\Users\MLP\Documents\Visual Studio 2015\Projects\FlaskBookstore\FlaskBookstore\obj\Debug\visualstudio_py_debugger.py
+C:\Users\MLP\Documents\Visual Studio 2015\Projects\FlaskBookstore\FlaskBookstore\obj\Debug\visualstudio_py_repl.py
+C:\Users\MLP\Documents\Visual Studio 2015\Projects\FlaskBookstore\FlaskBookstore\obj\Debug\visualstudio_py_util.py
+C:\Users\MLP\Documents\Visual Studio 2015\Projects\FlaskBookstore\FlaskBookstore\obj\Debug\__init__.py
+C:\Users\MLP\Documents\Visual Studio 2015\Projects\FlaskBookstore\FlaskBookstore\obj\Debug\__main__.py
+C:\Users\MLP\Documents\Visual Studio 2015\Projects\FlaskBookstore\FlaskBookstore\bin\AzureSetup.cfg
+C:\Users\MLP\Documents\Visual Studio 2015\Projects\FlaskBookstore\FlaskBookstore\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\MLP\Documents\Visual Studio 2015\Projects\FlaskBookstore\FlaskBookstore\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\MLP\Documents\Visual Studio 2015\Projects\FlaskBookstore\FlaskBookstore\bin\wfastcgi.py
+C:\Users\MLP\Documents\Visual Studio 2015\Projects\FlaskBookstore\FlaskBookstore\obj\Debug\deployment-updated-pyvenv.cfg
+C:\Users\MLP\Documents\Visual Studio 2015\Projects\FlaskBookstore\FlaskBookstore\ptvs_virtualenv_proxy.py
+C:\Users\MLP\Documents\Visual Studio 2015\Projects\FlaskBookstore\FlaskBookstore\obj\Debug\web.config
+C:\Users\MLP\Documents\Visual Studio 2015\Projects\FlaskBookstore\FlaskBookstore\obj\Debug\web.debug.config
+D:\Prem\FlaskBookstore\FlaskBookstore\bin\Microsoft.PythonTools.WebRole.dll
+D:\Prem\FlaskBookstore\FlaskBookstore\obj\Debug\attach_server.py
+D:\Prem\FlaskBookstore\FlaskBookstore\obj\Debug\visualstudio_py_debugger.py
+D:\Prem\FlaskBookstore\FlaskBookstore\obj\Debug\visualstudio_py_repl.py
+D:\Prem\FlaskBookstore\FlaskBookstore\obj\Debug\visualstudio_py_util.py
+D:\Prem\FlaskBookstore\FlaskBookstore\obj\Debug\__init__.py
+D:\Prem\FlaskBookstore\FlaskBookstore\obj\Debug\__main__.py
+D:\Prem\FlaskBookstore\FlaskBookstore\bin\AzureSetup.cfg
+D:\Prem\FlaskBookstore\FlaskBookstore\bin\Microsoft.PythonTools.AzureSetup.exe
+D:\Prem\FlaskBookstore\FlaskBookstore\bin\Microsoft.PythonTools.AzureSetup.exe.config
+D:\Prem\FlaskBookstore\FlaskBookstore\bin\wfastcgi.py
+D:\Prem\FlaskBookstore\FlaskBookstore\obj\Debug\web.config
+D:\Prem\FlaskBookstore\FlaskBookstore\obj\Debug\web.debug.config
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\FlaskBookstore\FlaskBookstore\bin\Microsoft.PythonTools.WebRole.dll
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\FlaskBookstore\FlaskBookstore\obj\Debug\attach_server.py
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\FlaskBookstore\FlaskBookstore\obj\Debug\visualstudio_py_debugger.py
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\FlaskBookstore\FlaskBookstore\obj\Debug\visualstudio_py_repl.py
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\FlaskBookstore\FlaskBookstore\obj\Debug\visualstudio_py_util.py
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\FlaskBookstore\FlaskBookstore\obj\Debug\__init__.py
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\FlaskBookstore\FlaskBookstore\obj\Debug\__main__.py
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\FlaskBookstore\FlaskBookstore\bin\AzureSetup.cfg
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\FlaskBookstore\FlaskBookstore\bin\Microsoft.PythonTools.AzureSetup.exe
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\FlaskBookstore\FlaskBookstore\bin\Microsoft.PythonTools.AzureSetup.exe.config
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\FlaskBookstore\FlaskBookstore\bin\wfastcgi.py
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\FlaskBookstore\FlaskBookstore\obj\Debug\web.config
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\FlaskBookstore\FlaskBookstore\obj\Debug\web.debug.config
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\Part2\FlaskBookstore\FlaskBookstore\bin\Microsoft.PythonTools.WebRole.dll
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\Part2\FlaskBookstore\FlaskBookstore\obj\Debug\attach_server.py
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\Part2\FlaskBookstore\FlaskBookstore\obj\Debug\visualstudio_py_debugger.py
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\Part2\FlaskBookstore\FlaskBookstore\obj\Debug\visualstudio_py_repl.py
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\Part2\FlaskBookstore\FlaskBookstore\obj\Debug\visualstudio_py_util.py
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\Part2\FlaskBookstore\FlaskBookstore\obj\Debug\__init__.py
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\Part2\FlaskBookstore\FlaskBookstore\obj\Debug\__main__.py
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\Part2\FlaskBookstore\FlaskBookstore\bin\AzureSetup.cfg
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\Part2\FlaskBookstore\FlaskBookstore\bin\Microsoft.PythonTools.AzureSetup.exe
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\Part2\FlaskBookstore\FlaskBookstore\bin\Microsoft.PythonTools.AzureSetup.exe.config
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\Part2\FlaskBookstore\FlaskBookstore\bin\wfastcgi.py
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\Part2\FlaskBookstore\FlaskBookstore\obj\Debug\web.config
+D:\1AgnesFromAgnesPC\LWTECH\FourthSemester\ITAD 280 - PYTHON\FinalProjectWork\FinalWork\Part2\FlaskBookstore\FlaskBookstore\obj\Debug\web.debug.config

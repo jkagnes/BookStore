@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Flask Bookstore</title>
+    <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="/static/scripts/modernizr-2.6.2.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#4c0002;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a href="/" class="navbar-brand">Application name</a>-->
+                <a style="color:white;font-weight:bold;" class="navbar-brand" href="#"><i class="fa fa-book"></i>&nbsp;BOOK STORE</a>
+            </div>
+
+            <div class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a style="color:white;font-weight:bold;" href="{{ url_for('home') }}">HOME</a></li>
+                    <li><a style="color:white;font-weight:bold;" class="{{'hidden' if 'username' in session else ''}}" href="{{ url_for('login') }}">LOGIN</a></li>
+                    <li><a style="color:white;font-weight:bold;" class="{{'' if 'username' in session else 'hidden'}}" href="{{ url_for('logout') }}">LOGOUT</a></li>
+                    <li><a style="color:white;font-weight:bold;" href="{{ url_for('cart') }}">CART</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-2">
+                <aside id="columnleft">
+                    <h2>Categories</h2>
+                    <ul class="nav nav-pills nav-stacked lead" id="category">
+                        {% for cat in categories %}
+                        <li><a href="{{url_for('list', category = cat)}}">{{cat}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-xs-10">
+                <div class="container body-content" style="height:95%">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+    <footer>
+        <p>&copy; {{ year }} - Bookstore@LWTECH</p>
+    </footer>
+
+    <script src="/static/scripts/jquery-1.10.2.js"></script>
+    <script src="/static/scripts/bootstrap.js"></script>
+    <script src="/static/scripts/respond.js"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block content %} 
+        <div class="jumbotron">
+            <h1 id="banner">Book Store</h1>
+            <h4 id="bannersmall">the best books for you</h4>
+            <div>
+                <img id="inline_img" src="../static/images/1446501603294.jpg" class="img-responsive"/>
+                <img id="right_img" src="../static/images/bk2.jpg" class="img-responsive" />
+            </div>
+        </div>
+        
+    <h2 style="font-family:'PTSans,Arial,Helvetica,sans-serif'; font-weight:bold; color:darkgreen; margin-left:20px;">New Releases</h2>         
+            {% for book in books %}
+            <div class="thumbnail" style="display:inline-block;width:300px;height:550px;overflow:auto;padding:15px;margin:15px">
+                <img src="{{book.smallThumbnail}}" />
+
+                <div class="caption">
+                    <div style="text-align:center">
+                        <form method="post" action="{{ url_for('addCart') }}">
+                            <input type="hidden" value="{{book.id}}" name="bookId" />
+                            <input type="hidden" value="{{url_for('home')}}" name="returnUrl" />
+                            <input type="submit" class="btn btn-success" value="Add to cart" />
+                        </form>
+                    </div>
+
+                    <h3 style="font-family:'Book Antiqua'; color:brown;"><strong>{{book.title}}</strong></h3>
+                    <p style="color:darkgreen;">Author: {{book.author}}<br />
+                    Pages: {{book.pageCount}}<br/>
+                    Price: <strong>{{book.price}}</strong><br />
+                    Publisher: {{book.publisher}}<br/>
+                    Published Date: {{book.publishedDate}}<br/>
+                    </p>
+                    <p style="color:darkblue;">{{book.description}}</p>                   
+                </div>
+            </div>
+            {% endfor %}                   
+{% endblock %}

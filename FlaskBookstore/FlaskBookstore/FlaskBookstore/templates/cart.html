@@ -1,0 +1,52 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<h2 style="font-family:Gabriola; font-size:40px; font-weight:bold; padding-top:10px;">Your cart</h2>
+<table class="table">
+    <thead>
+        <tr style="font-family:Garamond; font-size:23px;">
+            <th>Quantity</th>
+            <th>Item</th>
+            <th class="text-right">Price</th>
+            <th class="text-right">Subtotal</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for key, line in shopping_cart.items() %}
+        <tr>
+            <td style="text-align:justify;padding-left:35px;">{{line.quantity}}</td>
+            <td class="text-left">{{line.book.title}}</td>
+            <td class="text-right">${{"{:.2f}".format(line.book.price)}}</td>
+            <td class="text-right">
+                ${{"{:.2f}".format(line.quantity * line.book.price)}}
+            </td>
+            <td>
+                <form method="post" action="{{ url_for('removeCart') }}">
+
+                    <input type="hidden" value="{{line.book.id}}" name="bookId" />
+                    <input type="hidden" value="{{returnUrl}}" name="returnUrl" />
+
+                    <input type="submit" class="btn btn-sm btn-warning" style="color:black; margin-left:40px;" value="Remove" />
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" class="text-right">Total:</td>
+            <td class="text-right">
+              ${{"{:.2f}".format(totalValue)}}
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+<div class="text-center" style="margin-top:50px;">
+    <a style="font-family:Garamond; font-size:20px; margin-right:50px;" class="btn btn-primary" href="{{returnUrl}}">Continue shopping</a>
+
+    <a style="font-family:Garamond; font-size:20px; margin-left:120px;" class="btn btn-primary" href="{{url_for('checkout') if 'username' in session else url_for('login')}}">Checkout Now</a>
+</div>
+
+{% endblock %}

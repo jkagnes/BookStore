@@ -1,0 +1,71 @@
+﻿{% extends "layout.html" %}
+
+{% block scripts %}
+<script type="text/javascript">
+        $("#columnleft").css("display", "none");
+</script>
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+
+
+    <aside class="col-xs-2">
+        <img id="aside_img_complete" src="../static/images/stack.jpg" />
+    </aside>
+
+    <div class="col-xs-10">
+        <h2 style="font-size:50px; font-weight:bold; font-family:Gabriola;">Order Confirmation</h2>
+        <h4 style="font-family:Garamond; font-size:25px; padding-bottom:5px; margin-bottom:10px;">Thanks for placing your order. We'll ship your books as soon as possible.</h4>
+
+        <div class="panel panel-default" style="margin-right:100px;">
+            <div class="panel-heading" style="font-family:Cambria;font-size:20px; background-color:burlywood; color:darkblue;">Shipping Information</div>
+            <div class="panel-body">
+                <p class="=lead">{{shipTo}}</p>
+                <p>{{address_line1}}, {{address_line2}}</p>
+                <p>{{city}}, {{state}}, {{zip}}, {{country}}</p>
+            </div>
+        </div>
+
+        <div class="panel panel-default" style="margin-right:100px;">
+            <div class="panel-heading" style="background-color:burlywood;">
+                <h3 class="panel-title" style="font-family:Cambria;font-size:20px; color:darkblue;">Order Summary</h3>
+            </div>
+            <div class="panel-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Quantity</th>
+                            <th>Item</th>
+                            <th class="text-right">Price</th>
+                            <th class="text-right">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for key, line in shopping_cart.items() %}
+                        <tr>
+                            <td style="text-align:justify;padding-left:35px;">{{line.quantity}}</td>
+                            <td class="text-left">{{line.book.title}}</td>
+                            <td class="text-right">${{"{:.2f}".format(line.book.price)}}</td>
+                            <td class="text-right">
+                                ${{"{:.2f}".format(line.quantity * line.book.price)}}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="text-right">Total:</td>
+                            <td class="text-right">
+                                ${{"{:.2f}".format(totalValue)}}
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
